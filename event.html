@@ -73,8 +73,378 @@
                             </div>
                         </div>--> 
             </nav>
+ <div class="container-xxl py-5 bg-dark hero-header mb-5">
+               <section class="wNe-featured">
+		<video autoplay="" muted="" loop="" playsinline="" preload="auto" class="wNe-featured-video" src="img/Party2018.mp4" poster="/assets/homepage/header-poster-video-v2-M.png"></video>
+		<div class="wNe-featured-txt">
+			
+		</div>
+	</section>
+                       
+        </div>
+        <!-- Navbar & Hero End -->
+<style>
+.wNe-featured {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+.wNe-featured-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: 1;
+}
+
+.wNe-featured-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensures the text appears above the video */
+    color: white; /* Adjust text color as needed */
+    text-align: center;
+}
+
+:root {
+	//padding
+	--strd-b-pdg: 15px 2rem;
+	--tag-pd: 12px 7px;
+	--strd-mobile-pdg: 1rem;
+	// colors
+	--strd-blk: #000000;
+	--strd-wht: #fff;
+
+	//background-colors
+	--tag-bc: #eaeaea;
+	--primary-bc: #f5f8fa;
+	// height
+	--ft-hdr-hght: 400px;
+	//font-sizes
+	--hdr-txt: 2.4rem;
+
+	// margin
+	--mrg-center: 0 auto;
+	--mrg--5: 5px;
+}
+body {
+	margin: 0;
+	font-family: "Lexend", sans-serif;
+}
+.wNe {
+	position: relative;
+	&-featured {
+		align-items: center;
+		justify-content: flex-start;
+		display: flex;
+		height: var(--ft-hdr-hght);
+
+		position: relative;
+		background: linear-gradient(to top, #000000d9, rgb(255 255 255 / 0%)),
+			url(https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+		background-position: center;
+		background-size: cover;
+		&-video {
+			width: 100%;
+			object-position: left;
+			height: 100%;
+			object-fit: cover;
+		}
+		&-txt {
+			z-index: 2;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-weight: 600;
+			color: var(--strd-wht);
+			font-size: var(--hdr-txt);
+		}
+	}
+	&-body {
+		&--inner {
+			// padding: var(--strd-b-pdg);
+		}
+	}
+}
+// body content
+.body {
+	&-intro {
+		margin: 1rem 0;
+		&-tags {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 1.75rem;
+		}
+		&-tag {
+			padding: var(--tag-pd);
+			border-radius: 8px;
+			flex: auto 1;
+			margin: var(--mrg--5);
+			color: var(--strd-blk);
+			background-color: var(--primary-bc);
+			font-size: 0.9rem;
+			text-align: center;
+			cursor: pointer;
+			&-active {
+				background-color: var(--strd-blk);
+				color: var(--strd-wht);
+			}
+		}
+	}
+	&-statistics {
+		background-color: var(--primary-bc);
+
+		&-container {
+			margin-top: 4rem;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&-content {
+			height: 250px;
+			width: calc(33.3333% - 64px);
+
+			h4 {
+				font-size: 1.125rem;
+				letter-spacing: 0.010625rem;
+				margin: 0px;
+				margin-bottom: 1rem;
+				font-weight: 700;
+				color: rgb(25, 25, 25);
+				line-height: 1.75rem;
+			}
+		}
+	}
+	&-img-full {
+		display: flex;
+		justify-content: center;
+		width: calc(100% - var(--strd-b-pdg));
+		overflow: hidden;
+		align-items: center;
+		height: 590px;
+
+		img {
+			height: 30rem;
+		}
+	}
+	&-content {
+		&_tag {
+			display: none;
+
+			&-img {
+				background-position: center;
+				background-size: cover;
+			}
+			&-info {
+				padding: 0 10px;
+				flex: 1;
+				margin-left: 1rem;
+				display: flex;
+				flex-direction: column;
+			}
+			&-img {
+				height: 30rem;
+				width: 45%;
+			}
+			&-active {
+				display: flex;
+				-webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+				animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+			}
+		}
+	}
+}
+.sectionalHeader {
+	font-size: 2rem;
+}
+.sectionalHeaderS {
+	font-size: 1.4rem;
+	margin-top: 0;
+}
+.strd-p {
+	font-size: 1rem;
+	margin: 0px;
+	font-weight: 500;
+	color: rgb(81, 82, 84);
+	line-height: 1.5rem;
+}
+.body--padding {
+	padding: var(--strd-b-pdg);
+}
+
+.tagLink {
+	&-content {
+		// &-1 {
+		// 	background-color: #000;
+		// }
+		// &-2 {
+		// 	background-color: #333;
+		// }
+		// &-3 {
+		// 	background-color: #f6f6f6;
+		// }
+		// &-4 {
+		// 	background-color: red;
+		// }
+		// &-5 {
+		// 	background-color: blue;
+		// }
+		// &-6 {
+		// 	background-color: green;
+		// }
+		// &-7 {
+		// 	background-color: yellow;
+		// }
+	}
+}
+.tagLinkIsActive {
+}
+.bc {
+	&-1 {
+		background-image: url(https://images.pexels.com/photos/1054397/pexels-photo-1054397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+	&-2 {
+		background-image: url(https://images.pexels.com/photos/3205568/pexels-photo-3205568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+	&-3 {
+		background-image: url(https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+	&-4 {
+		background-image: url(https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+	&-5 {
+		background-image: url(https://images.pexels.com/photos/2182863/pexels-photo-2182863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+	&-6 {
+		background-image: url(https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+	&-7 {
+		background-image: url(https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	}
+}
+
+// media queries
+
+@media only screen and (max-width: 850px) {
+	.body {
+		&-statistics {
+			&-container {
+			}
+			&-content {
+				height: 200px;
+				width: calc(50% - 1rem);
+			}
+		}
+		&-intro {
+			&-tags {
+				flex-wrap: nowrap;
+				overflow-x: scroll;
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+			&-tag {
+				white-space: nowrap;
+			}
+		}
+	}
+	.wNe-featured-txt {
+		h3 {
+			font-size: 2rem;
+		}
+		span {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.body {
+		&-statistics {
+			&-container {
+				margin-top: 2rem;
+			}
+			&-content {
+				height: 155px;
+				width: 100%;
+			}
+		}
+	}
+	.sectionalHeader {
+		font-size: 1.6rem;
+	}
+	.body--padding {
+		padding: var(--strd-mobile-pdg);
+	}
+	.body-content_tag {
+		flex-direction: column;
+		height: auto;
+		&-img {
+			width: 100%;
+			height: 15rem;
+		}
+		&-info {
+			height: auto;
+			padding: 0 10px;
+			flex: 1;
+			margin-left: 0rem;
+			margin-top: 2rem;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.body-intro {
+		margin: 0;
+	}
+}
+// Animation - Key Frames
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+</style>
+<script>
+const tagContainer = document.querySelector(".body-intro-tags");
+const tag = document.querySelectorAll(".body-intro-tag");
+const tagContent = document.querySelectorAll(".body-content_tag");
+
+tagContainer.addEventListener("click", function (e) {
+	const click = e.target.closest(".body-intro-tag");
+	console.log(click);
+	if (!click) return;
+	tag.forEach((t) => t.classList.remove("body-intro-tag-active"));
+	click.classList.add("body-intro-tag-active");
+	tagContent.forEach((content) =>
+		content.classList.remove("body-content_tag-active")
+	);
+	document
+		.querySelector(`.tagLink-content-${click.dataset.taglink}`)
+		.classList.add("body-content_tag-active");
+});
+</script>
+
+
+         <!---   <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Events</h1>
                         <p align="center">Organize Your Events in our Restaurant</p>
@@ -87,7 +457,7 @@
                     </nav> -->
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Navbar & Hero End -->
 
 
