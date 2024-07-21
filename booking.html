@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Restoran - Bootstrap Restaurant Template</title>
+    <title>Enchanté Eats</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon-32x32.png" rel="icon">
 
     <!-- Google Web Fonts -->
+<!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
@@ -44,10 +45,12 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
+       <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Enchanté Eats</h1>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,40 +58,87 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link ">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <a href="event.html" class="nav-item nav-link">Event</a>
+                         <a href="menu.html" class="nav-item nav-link">Menu</a>
+                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                         <!--  <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
                             <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item active">Booking</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                               
+                                <a href="party.html" class="dropdown-item">Party</a>
+                               <a href="birthday.html" class="dropdown-item">Birthday</a>
+                               <a href="meeting.html" class="dropdown-item">Meeting</a>
                             </div>
-                        </div>
+                        </div>--> 
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                  
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Booking</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Booking</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
+          <div class="container">
+
+   <div class="left-side">
+    <div class="image-container">
+        <img src="https://i.ibb.co/DzZyM1v/hotel.jpg" alt="" class="full-size-image">
+        <h1 class="text-overlay">Book A Table Online</h1>
+    </div>
+</div>
+
+<style>
+.left-side {
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.full-size-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem; /* Adjust size as needed */
+    text-align: center;
+    margin: 0;
+}
+</style>
+
+
+
         <!-- Navbar & Hero End -->
-
-
+<style>
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato',sans-serif;
+    overflow-x: hidden;
+    background: url('https://i.ibb.co/DzZyM1v/hotel.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(12px);
+}
+</style>
         <!-- Reservation Start -->
         <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
             <div class="row g-0">
@@ -102,63 +152,55 @@
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
-                        <h1 class="text-white mb-4">Book A Table Online</h1>
-                        <form id="contactForm">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="Name:" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                           <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="Mobile:" placeholder="Mobile">
-                                    <label for="name">Mobile Number</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" name="Email:" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating date" id="date3" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" name="Date & Time:" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                    <label for="datetime">Date & Time</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" name="No of Person" id="select1">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                    <label for="select1">No of Person</label>
-                                </div>
-                            </div>
-                             <div class="col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" name="No of Child" id="select1">
-                                        <option value="1">1</option>
-                                        <option value="2"> 2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                    <label for="select1">No of Child</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" name="Message" placeholder="Special Request" style="height: 100px"></textarea>
-                                    <label for="message">Special Request</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
-                            </div>
-                        </div>
+                        
+                         <form id="contactForm">
+                         <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+   <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select id="room-selection" name="	Table_preference" required>
+        <option value="">Choose a Table from the List</option>
+        <option value="Standard Dining Table">Standard Dining Table</option>
+        <option value="Booth Seating">Booth Seating</option>
+        <option value="Banquette Seating">Banquette Seating</option>
+        <option value="Bar Tables">Bar Tables</option>
+        <option value="Counter Seating">Counter Seating</option>
+        <option value="Communal Tables">Communal Tables</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book The Table</button>
                     </form>
                 </div>
             </div>
@@ -243,10 +285,9 @@
                         <p>10AM - 08PM</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Subscribe Me</h4>
+                       <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Subscribe Me</h4>
                         <p>Your subscription gives power to us.</p>
- 
-                    <form id="contactForm-2">
+                       <form id="contactForm-2">
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-primary w-100 py-3 ps-4 pe-5" name="Email:" type="text" placeholder="Your email">
                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">submit</button>
@@ -282,7 +323,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+           <div class="container">
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -327,4 +368,5 @@
     <script src="js/main.js"></script>
 </body>
 
+</html>
 </html>
