@@ -475,16 +475,10 @@ padding: 25px 0;
         
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="gallery.html">Gallery</a>
-                        <a class="btn btn-link" href="event.html">Event </a>
-                        <a class="btn btn-link" href="testimonial.html">Review</a>
-                        
-                    </div>
+                   
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
@@ -504,43 +498,9 @@ padding: 25px 0;
                         <h5 class="text-light fw-normal">Sunday</h5>
                         <p>10AM - 08PM</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Subscribe Me</h4>
-                        <p>Your subscription gives power to us.</p>
- 
-                    <form id="contactForm-2">
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" name="Email:" type="text" placeholder="Your email">
-                           <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">submit</button>
-                              </div>
-</form>
-
-
- <script>
-    // JavaScript to handle form submission
-    document.getElementById("contactForm-2").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        const formData = new FormData(event.target);
-        const email = 'kwagaecom@gmail.com'; // Your Gmail address
-        const subject = 'Subscriber Email Submission'; // Subject for the email
-
-        let message = "Subscriber Details:\n\n";
-
-        // Iterate over form data and append to message
-        for (const [key, value] of formData.entries()) {
-            message += `${key}: ${value}\n`;
-        }
-
-        // Create a "mailto" URL with the pre-filled email subject and body
-        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-        // Open the default email client with the pre-filled email
-        window.location.href = mailtoURL;
-
-        // You can also display a success message or redirect the user to a thank-you page
-    });
-</script>
+          <div class="col-lg-6 col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093657!2d144.9537353155044!3d-37.81627917975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727df09c728d7c!2s123+Street%2C+New+York%2C+USA!5e0!3m2!1sen!2s!4v1499824345916" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
                     </div>
                 </div>
             </div>
@@ -549,10 +509,8 @@ padding: 25px 0;
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">Enchanté Eats</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://www.kwaga.in/">Kwaga</a>
-                            Distributed By <a class="border-bottom" href="https://www.kwaga.in/" target="_blank">Kwaga Team</a>
+                            
+                           
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
