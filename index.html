@@ -880,43 +880,7 @@
                         <h5 class="text-light fw-normal">Sunday</h5>
                         <p>10AM - 08PM</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Subscribe Me</h4>
-                        <p>Your subscription gives power to us.</p>
- 
-                    <form id="contactForm-2">
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" name="Email:" type="text" placeholder="Your email">
-                           <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">submit</button>
-                              </div>
-</form>
-
-
- <script>
-    // JavaScript to handle form submission
-    document.getElementById("contactForm-2").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        const formData = new FormData(event.target);
-        const email = 'kwagaecom@gmail.com'; // Your Gmail address
-        const subject = 'Subscriber Email Submission'; // Subject for the email
-
-        let message = "Subscriber Details:\n\n";
-
-        // Iterate over form data and append to message
-        for (const [key, value] of formData.entries()) {
-            message += `${key}: ${value}\n`;
-        }
-
-        // Create a "mailto" URL with the pre-filled email subject and body
-        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-        // Open the default email client with the pre-filled email
-        window.location.href = mailtoURL;
-
-        // You can also display a success message or redirect the user to a thank-you page
-    });
-</script>
+                 
                     </div>
                 </div>
             </div>
