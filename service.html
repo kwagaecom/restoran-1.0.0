@@ -75,18 +75,282 @@
                     <a href="gallery.html" class="external">Gallery</a>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
-                   <!-- <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                             <li class="breadcrumb-item"><a href="#">Pages</a></li> 
-                            <li class="breadcrumb-item text-white active" aria-current="page">Service</li>
-                        </ol>
-                    </nav>-->
-                </div>
-            </div>
+                <div id="container">
+  <div id="stage">
+    <div id="shape" class="cube backfaces">
+      <div class="plane one data">Dine-In Service: Traditional service where customers sit at tables and are served by waitstaff.</div>
+      <div class="plane two data">Takeout Service: Customers order food to be prepared and packaged for them to take away and eat elsewhere.</div>
+      <div class="plane three data">Delivery Service: Restaurants deliver food directly to customers' homes or offices, either through their own staff or third-party delivery apps.</div>
+      <div class="plane four data">Catering: Providing large quantities of food for events such as parties, weddings, and corporate functions.</div>
+      <div class="plane five data">Online Ordering: Customers can place orders through the restaurant's website or mobile app for pickup or delivery.</div>
+      <div class="plane six data">Reservation System: Allowing customers to book tables in advance to ensure seating at busy times.</div>
+      <div class="plane seven data">Private Dining: Offering private rooms or areas for special occasions and events.</div>
+      <div class="plane eight data">Happy Hour: Providing discounts on drinks and sometimes food during specific hours.</div>
+      <div class="plane nine data">Loyalty Programs: Rewarding repeat customers with points, discounts, or special offers.</div>
+      <div class="plane ten data">Specialty Nights and Events: Hosting themed nights, live music, trivia nights, or special holiday menus to attract and engage customers.</div>
+  
+    </div>
+  </div>
+</div>
+
+
+<style>
+body {
+  background-color: black;
+  color: white;
+  font-family: "Lucida Grande", Verdana, Arial;
+  font-size: 12px;
+  background-image: -webkit-gradient(
+    radial,
+    50% 500,
+    1,
+    50% 500,
+    400,
+    from(rgba(255, 255, 255, 0.3)),
+    to(rgba(255, 255, 255, 0))
+  );
+  background-repeat: no-repeat;
+}
+
+#container {
+  width: 100%;
+  height: 700px;
+  -webkit-perspective: 800;
+  /* For compatibility with iPhone 3.0, we leave off the units here */
+  -webkit-perspective-origin: 50% 225px;
+}
+
+#stage {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 2s;
+  -webkit-transform-style: preserve-3d;
+}
+
+#shape {
+  position: relative;
+  top: 160px;
+  margin: 0 auto;
+  height: 250px; /* Increased by 25% */
+  width: 250px; /* Increased by 25% */
+  -webkit-transform-style: preserve-3d;
+}
+
+.img_full {
+  width: 225px; /* Increased by 25% */
+  height: 225px; /* Increased by 25% */
+}
+
+.plane {
+  position: absolute;
+  height: 250px; /* Increased by 25% */
+  width: 250px; /* Increased by 25% */
+  border: 1px solid white;
+  -webkit-border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: -webkit-transform 2s, opacity 2s;
+  -webkit-backface-visibility: hidden;
+}
+
+#shape.backfaces .plane {
+  -webkit-backface-visibility: visible;
+}
+
+#shape {
+  -webkit-animation: spin 20s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0);
+  }
+
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+/* ---------- cube styles ------------- */
+.cube > .one {
+  opacity: 0.8;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .two {
+  opacity: 0.8;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .three {
+  opacity: 0.8;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .four {
+  opacity: 0.8;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .five {
+  opacity: 0.8;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .six {
+  opacity: 0.8;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(125px)
+    rotate(180deg); /* Adjusted for 25% increase */
+}
+
+.cube > .seven {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(90deg) translateZ(125px)
+    rotate(180deg); /* Adjusted for 25% increase */
+}
+
+.cube > .eight {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .nine {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(90deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .ten {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(180deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .eleven {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(-90deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+.cube > .twelve {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(-90deg) translateZ(125px); /* Adjusted for 25% increase */
+}
+
+/* ---------- ring styles ------------- */
+.ring > .one {
+  -webkit-transform: translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .two {
+  -webkit-transform: rotateY(30deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .three {
+  -webkit-transform: rotateY(60deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .four {
+  -webkit-transform: rotateY(90deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .five {
+  -webkit-transform: rotateY(120deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .six {
+  -webkit-transform: rotateY(150deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .seven {
+  -webkit-transform: rotateY(180deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .eight {
+  -webkit-transform: rotateY(210deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .nine {
+  -webkit-transform: rotateY(-120deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .ten {
+  -webkit-transform: rotateY(-90deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .eleven {
+  -webkit-transform: rotateY(300deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.ring > .twelve {
+  -webkit-transform: rotateY(330deg) translateZ(475px); /* Adjusted for 25% increase */
+}
+
+.user {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.user > img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.comment {
+  margin-top: 0px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.comment_body {
+  font-family: Times, serif;
+  font-size: 12px;
+  padding-top: 3px;
+}
+
+.comment_time {
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.new {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+@keyframes fadein {
+  0% {
+    color: #fff;
+    opacity: 0;
+  }
+
+  100% {
+    color: #000;
+    opacity: 1;
+  }
+}
+</style>
+
+<script>
+function hasClassName(inElement, inClassName) {
+  var regExp = new RegExp("(?:^|\\s+)" + inClassName + "(?:\\s+|$)");
+  return regExp.test(inElement.className);
+}
+
+function addClassName(inElement, inClassName) {
+  if (!hasClassName(inElement, inClassName))
+    inElement.className =
+      [inElement.className, inClassName].join(" ");
+}
+
+function removeClassName(inElement, inClassName) {
+  if (hasClassName(inElement, inClassName)) {
+    var regExp = new RegExp("(?:^|\\s+)" + inClassName + "(?:\\s+|$)", "g");
+    var curClasses = inElement.className;
+    inElement.className = curClasses.replace(regExp, " ");
+  }
+}
+
+function toggleClassName(inElement, inClassName) {
+  if (hasClassName(inElement, inClassName))
+    removeClassName(inElement, inClassName);
+  else addClassName(inElement, inClassName);
+}
+</script>
         </div>
         <!-- Navbar & Hero End -->
 
