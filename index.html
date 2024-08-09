@@ -295,7 +295,26 @@ socialShareButtons.forEach(function (button) {
 <a href="booking.html" class="btn btn-primary py-2 px-4"align="center"class="external">Book A Table</a>
 
                             <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
-                            <a class='whats-chat' href='Order .html'><button type="button" class="btn btn-primary">Order Online</button></a>
+                           
+
+                            
+                           <a href="Order .html" style="
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #17a2b8; /* Bootstrap info blue */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;">
+    Order Online
+</a>
                             <p class="text-white animated slideInLeft mb-4 pb-2">Indulge in the delectable flavors of our carefully curated dishes, designed to satisfy your cravings and delight your taste buds. We invite you to relish every bite of our scrumptious meals, tailored to ensure your dining pleasure.</p>
                             
                         </div>
@@ -389,53 +408,172 @@ socialShareButtons.forEach(function (button) {
 
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                <h5>Master Chefs</h5>
-                                
-                            </div>
-                        </div>
+      <style>
+.section {
+  width: 100%;
+  padding: 40px 0;
+}
+.container {
+  padding: 0 30px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* How It Works */
+#how-it-works {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box {
+  border: 1px solid #b2b2b2;
+  padding: 25px 5px;
+  margin: 0 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.box ion-icon {
+  font-size: 35px;
+  color: var(--clr-primary);
+  margin: 15px 0;
+}
+
+.box.active,
+.box:hover {
+  color: #fff;
+  border-color: var(--clr-primary);
+  background: var(--clr-primary);
+}
+
+.box.active ion-icon,
+.box:hover ion-icon {
+  color: #fff;
+}
+/* End How It Works */
+
+/* About */
+#about .visual img,
+#app .visual img {
+  margin-right: auto;
+}
+.secondary {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+/* End About */
+</style>
+ <div class="section flex" id="hero-section">
+      <div class="text">
+        <h1 class="primary">
+          Do Enjoy, <br />
+          Our's <span>Services</span>
+        </h1>
+<br>
+        <!---<p class="tertiary">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
+          provident dolorum. Voluptatum ducimus minima quasi unde, voluptatibus
+          soluta eligendi. Enim, architecto autem.
+        </p>
+
+        <a href="#menu" class="btn">Explore Menu</a>--->
+      </div>
+      <div class="visual">
+        <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/home-banner.png" style="width: 500px; height: auto; margin: 0; padding: 0;"alt="" />
+      </div>
+    </div>
+  
+        <!-- Service Start -->
+       <div class="container-xxl py-5">
+    <div class="container text-center">
+        <h2 class="secondary mb-5">How It Works</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3 text-center">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-clock text-primary mb-4"></i>
+                        <h5>Easy Order</h5>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Quality Food</h5>
-                                
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded pt-3 text-center">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-trophy text-primary mb-4"></i>
+                        <h5>Best Quality</h5>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                                <h5>Online Order</h5>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                                <h5>24/7 Service</h5>
-                               
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item rounded pt-3 text-center">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-check text-primary mb-4"></i>
+                        <h5>Fast Delivery</h5>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
-<div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
-                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="service.html">Service More</a>
-                        </div>
+    </div>
+</div>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
+        .video-section {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .video-section h2 {
+            font-size: 24px;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+ <div align="center"class="video-section">
+        <h2>Event</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/0yM6XqvOOe8" title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </div>
+        <!-- Service End -->
+<!--<div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="service.html">Service More</a>
+                        </div>-->
         <!-- About Start -->
        <!--  <div class="container-xxl py-5">
             <div class="container">
@@ -535,7 +673,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Idli</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Steamed rice cakes served with coconut chutney and sambar.</small>
                                         </div>
@@ -547,7 +685,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Dosa</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR105</span>
                                             </h5>
                                             <small class="fst-italic">Crispy fermented rice and lentil crepes, typically accompanied by chutney and sambar.</small>
                                         </div>
@@ -559,7 +697,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Pancakes with maple syrup</span>
-                                                <span class="text-primary">$105</span>
+                                                <span class="text-primary">INR105</span>
                                             </h5>
                                             <small class="fst-italic">Fluffy pancakes drizzled with sweet maple syrup</small>
                                         </div>
@@ -571,7 +709,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>French toast</span>
-                                                <span class="text-primary">$95</span>
+                                                <span class="text-primary">INR95</span>
                                             </h5>
                                             <small class="fst-italic">Slices of bread soaked in egg mixture and fried to golden perfection</small>
                                         </div>
@@ -583,7 +721,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Sausage patties</span>
-                                                <span class="text-primary">$75</span>
+                                                <span class="text-primary">INR75</span>
                                             </h5>
                                             <small class="fst-italic">Juicy sausages seasoned and cooked to savory perfection</small>
                                         </div>
@@ -595,7 +733,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Omelette with cheese and ham</span>
-                                                <span class="text-primary">$85</span>
+                                                <span class="text-primary">INR85</span>
                                             </h5>
                                             <small class="fst-italic">Fluffy omelette filled with melted cheese and diced ham</small>
                                         </div>
@@ -607,7 +745,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Misal Pav</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR95</span>
                                             </h5>
                                             <small class="fst-italic">Spicy sprout curry served with soft bread rolls</small>
                                         </div>
@@ -619,7 +757,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Poha</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR85</span>
                                             </h5>
                                             <small class="fst-italic">Flattened rice cooked with turmeric, mustard seeds, and garnished with fresh coriander and lemon.</small>
                                         </div>
@@ -635,7 +773,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Biryani</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR111</span>
                                             </h5>
                                             <small class="fst-italic">Aromatic rice dish cooked with marinated meat or vegetables and fragrant spices.</small>
                                         </div>
@@ -647,7 +785,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Paneer Butter Masala</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR120</span>
                                             </h5>
                                             <small class="fst-italic">Cottage cheese cubes cooked in a rich tomato and butter gravy.</small>
                                         </div>
@@ -659,7 +797,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>BBQ ribs with coleslaw</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Tender, fall-off-the-bone ribs slathered in tangy barbecue sauce, paired with crisp coleslaw.</small>
                                         </div>
@@ -671,7 +809,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Chicken Alfredo with garlic bread</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Creamy Alfredo sauce coating tender chicken, served alongside warm garlic bread</small>
                                         </div>
@@ -683,7 +821,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Fish and chips with tartar sauce</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Crispy battered fish fillets served with golden fries and tangy tartar sauce.</small>
                                         </div>
@@ -695,7 +833,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Beef lasagna with a side salad</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Layers of rich beef, cheese, and pasta baked to perfection, accompanied by a fresh side salad.</small>
                                         </div>
@@ -707,7 +845,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Dal Tadka</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR112</span>
                                             </h5>
                                             <small class="fst-italic">Yellow lentils tempered with cumin, garlic, and spices.</small>
                                         </div>
@@ -719,7 +857,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Palak Paneer</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR123</span>
                                             </h5>
                                             <small class="fst-italic">Cottage cheese cubes cooked in a creamy spinach sauce.</small>
                                         </div>
@@ -735,7 +873,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Chicken Curry</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR125</span>
                                             </h5>
                                             <small class="fst-italic">Tender chicken pieces simmered in a spicy and flavorful curry sauce.</small>
                                         </div>
@@ -747,7 +885,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Rajma</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR195</span>
                                             </h5>
                                             <small class="fst-italic">Red kidney beans cooked in a thick tomato-based gravy.</small>
                                         </div>
@@ -759,7 +897,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Pork chops with apple sauce</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Juicy pork chops paired with sweet and tangy homemade apple sauce, a delicious blend of flavors.</small>
                                         </div>
@@ -771,7 +909,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Lamb chops with mint jelly</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Tender lamb chops served with refreshing mint jelly, a timeless combination.</small>
                                         </div>
@@ -783,7 +921,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Tuna steak with quinoa salad</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR115</span>
                                             </h5>
                                             <small class="fst-italic">Seared tuna steak served with a refreshing quinoa salad, a nutritious and flavorful dinner option</small>
                                         </div>
@@ -795,7 +933,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Lobster tail with drawn butter</span>
-                                                <span class="text-primary">$110</span>
+                                                <span class="text-primary">INR110</span>
                                             </h5>
                                             <small class="fst-italic">Succulent lobster tail accompanied by rich drawn butter, a luxurious indulgence</small>
                                         </div>
@@ -807,7 +945,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Aloo Gobi</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR215</span>
                                             </h5>
                                             <small class="fst-italic">Potatoes and cauliflower cooked with tomatoes, onions, and spices</small>
                                         </div>
@@ -819,7 +957,7 @@ socialShareButtons.forEach(function (button) {
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Fish Curry</span>
-                                                <span class="text-primary">$115</span>
+                                                <span class="text-primary">INR325</span>
                                             </h5>
                                             <small class="fst-italic">Fish fillets simmered in a tangy and spicy coconut-based curry</small>
                                         </div>
@@ -939,11 +1077,11 @@ socialShareButtons.forEach(function (button) {
 
         // Iterate over form data and append to message
         for (const [key, value] of formData.entries()) {
-            message += `${key}: ${value}\n`;
+            message += `INR{key}: INR{value}\n`;
         }
 
         // Create a "mailto" URL with the pre-filled email subject and body
-        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        const mailtoURL = `mailto:INR{email}?subject=INR{encodeURIComponent(subject)}&body=INR{encodeURIComponent(message)}`;
 
         // Open the default email client with the pre-filled email
         window.location.href = mailtoURL;
@@ -973,77 +1111,7 @@ socialShareButtons.forEach(function (button) {
 
 
         <!-- Team Start -->
-        <div class="container-xxl pt-5 pb-3">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Staffs</h5>
-                    <h1 class="mb-5">Our Master Chefs</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Maria Rodriguez</h5>
-                            <small>Head Chef</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">James Thompson</h5>
-                            <small>Restaurant Manager</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Lisa Patel</h5>
-                            <small>Head Waiter</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Kevin Nguyen</h5>
-                            <small>Sous Chef</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-                         <div class="col-xl-4 text-xl-end wow fadeInUp" data-wow-delay="0.3s">
-                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="team.html">Staff More</a>
-                        </div>
-
+       
         <!-- Testimonial Start -->
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
