@@ -73,7 +73,7 @@
                             </div>
                         </div>--> 
             </nav>
- <div class="container-xxl py-5 bg-dark hero-header mb-5">
+           <div class="container-xxl py-5 bg-dark hero-header mb-5">
                <section class="wNe-featured">
 		<video autoplay="" muted="" loop="" playsinline="" preload="auto" class="wNe-featured-video" src="img/Party2018.mp4" poster="/assets/homepage/header-poster-video-v2-M.png"></video>
 		<div class="wNe-featured-txt">
@@ -443,23 +443,78 @@ tagContainer.addEventListener("click", function (e) {
 });
 </script>
 
+<div id="eventCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Live Music Night</div>
+          <div class="card-body">
+            <h5 class="card-title">Enjoy Live Jazz</h5>
+            <p class="card-text">Join us this Friday for an evening of live jazz music, great food, and drinks.</p>
+           
+          </div>
+        </div>
+        <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header">Wine Tasting</div>
+          <div class="card-body">
+            <h5 class="card-title">Exclusive Wine Tasting</h5>
+            <p class="card-text">Explore a selection of premium wines with our expert sommelier.</p>
+           
+          </div>
+        </div>
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+          <div class="card-header">Gourmet Night</div>
+          <div class="card-body">
+            <h5 class="card-title">Chef's Special Menu</h5>
+            <p class="card-text">Indulge in a specially curated menu by our head chef.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Cooking Workshop</div>
+          <div class="card-body">
+            <h5 class="card-title">Learn to Cook</h5>
+            <p class="card-text">Join our hands-on cooking workshop and master new culinary skills.</p>
+            
+          </div>
+        </div>
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Food Festival</div>
+          <div class="card-body">
+            <h5 class="card-title">Taste the World</h5>
+            <p class="card-text">Experience flavors from around the world at our food festival.</p>
+           
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Happy Hour</div>
+          <div class="card-body">
+            <h5 class="card-title">Discounted Drinks</h5>
+            <p class="card-text">Enjoy our special discounted drinks every weekday from 5-7 PM.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-         <!---   <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Events</h1>
-                        <p align="center">Organize Your Events in our Restaurant</p>
-                    <!--<nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
-                        </ol>
-                    </nav> -->
-                </div>
-            </div>
-        </div>-->
-        <!-- Navbar & Hero End -->
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         <!-- Service Start -->
 
@@ -488,7 +543,9 @@ tagContainer.addEventListener("click", function (e) {
                     <h3>Birthday Parties</h3>
                     <div class="price">
                         <p><span>$189</span></p>
+<a href="booking.html"><button type="button" class="btn btn-primary">Book Now</button></a>
                     </div>
+                          
                     <p class="fst-italic">
                         Enchanté Eats, renowned for its exquisite cuisine and charming ambiance, is also a premier destination for hosting unforgettable birthday parties. Whether you're planning a child's fun-filled celebration or an elegant soirée for an adult, Enchanté Eats offers a variety of packages tailored to make every birthday special.
                     </p>
@@ -527,7 +584,7 @@ tagContainer.addEventListener("click", function (e) {
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Private Parties</h3>
                     <div class="price">
-                        <p><span>$290</span></p>
+                        <p><span>$290</span></p><a href="booking.html"><button type="button" class="btn btn-info">Book Now</button></a>
                     </div>
                     <p class="fst-italic">
                         Enchanté Eats, a premier dining establishment known for its exceptional cuisine and sophisticated ambiance, also excels in hosting private parties. Whether it's an intimate gathering, a corporate event, or a lavish celebration, Enchanté Eats provides an elegant setting and impeccable service to ensure a memorable experience for all guests.
@@ -579,7 +636,7 @@ tagContainer.addEventListener("click", function (e) {
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Custom Parties</h3>
                     <div class="price">
-                        <p><span>$99</span></p>
+                        <p><span>$99</span></p><a href="booking.html"><button type="button" class="btn btn-secondary">Book Now</button></a>
                     </div>
                     <p class="fst-italic">
                        Enchanté Eats, celebrated for its culinary excellence and enchanting ambiance, offers bespoke party planning services designed to turn any occasion into a unique and memorable event. With a focus on personalization and meticulous attention to detail, Enchanté Eats creates custom parties that perfectly reflect the vision and style of the host.
@@ -630,6 +687,7 @@ tagContainer.addEventListener("click", function (e) {
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+     
      
 
         <!-- Footer Start -->
