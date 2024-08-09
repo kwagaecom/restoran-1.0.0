@@ -75,7 +75,205 @@
                     <a href="gallery.html" class="external">Gallery</a>
             </nav>
 
-                <div id="container">
+<style>  
+         /* General Reset */
+body, h2, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visual img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.secondary {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.download {
+  margin-top: 2rem;
+}
+
+.app-store {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-right: 1rem;
+  width: 200px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.app-store:last-child {
+  margin-right: 0;
+}
+
+.app-store:hover {
+  background: #e0e0e0;
+}
+
+.app-store ion-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.app-store p {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.app-store span {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .visual,
+  .text {
+    width: 100%;
+  }
+
+  .app-store {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+.visual {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .visual img {
+            width: 50%; /* Adjust the percentage to make the image smaller or larger */
+            height: auto; /* Maintain the aspect ratio */
+            
+        }
+</style>   
+      <div class="section" id="app">
+      <div class="container flex">
+        <div class="visual">
+          <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/app.png" alt="" />
+        </div>
+
+        <div class="text">
+          <h2 align="center"class="secondary">Download Our App</h2>
+        
+
+          <div class="download flex">
+            <div class="app-store">
+              <ion-icon name="logo-google-playstore"></ion-icon>
+              <p>
+                GET IT ON <br />
+                <span>Google Play</span>
+              </p>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+                
+        <!-- Service Start -->
+<div class="container d-flex justify-content-center">
+  <div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <button class="nav-link active" id="v-pills-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-order" type="button" role="tab" aria-controls="v-pills-order" aria-selected="true">Order</button>
+      <button class="nav-link" id="v-pills-delivery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-delivery" type="button" role="tab" aria-controls="v-pills-delivery" aria-selected="false">Delivery</button>
+      <button class="nav-link" id="v-pills-discount-tab" data-bs-toggle="pill" data-bs-target="#v-pills-discount" type="button" role="tab" aria-controls="v-pills-discount" aria-selected="false">Discount</button>
+      <button class="nav-link" id="v-pills-catering-tab" data-bs-toggle="pill" data-bs-target="#v-pills-catering" type="button" role="tab" aria-controls="v-pills-catering" aria-selected="false">Catering</button>
+      <button class="nav-link" id="v-pills-menu-tab" data-bs-toggle="pill" data-bs-target="#v-pills-menu" type="button" role="tab" aria-controls="v-pills-menu" aria-selected="false">Menu</button>
+      <button class="nav-link" id="v-pills-support-tab" data-bs-toggle="pill" data-bs-target="#v-pills-support" type="button" role="tab" aria-controls="v-pills-support" aria-selected="false">Service</button>
+      <button class="nav-link" id="v-pills-rooms-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rooms" type="button" role="tab" aria-controls="v-pills-rooms" aria-selected="false">Private Rooms</button>
+      <button class="nav-link" id="v-pills-wine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wine" type="button" role="tab" aria-controls="v-pills-wine" aria-selected="false">Wine Pairing</button>
+    </div>
+
+    <div class="tab-content flex-grow-1 d-flex justify-content-center align-items-center" id="v-pills-tabContent">
+      <!-- Order Tab -->
+      <div class="tab-pane fade show active text-center" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+        <h2 class="mb-3">Online </h2><i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+        <img src="https://plus.unsplash.com/premium_photo-1661335232234-fc25c7f03151?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJlc3RhdXJhbnQlMjBvbmxpbmUlMjBvcmRlciUyMHN5c3RlbXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" alt="Order Image">
+      </div>
+      
+      <!-- Delivery Tab -->
+      <div class="tab-pane fade text-center" id="v-pills-delivery" role="tabpanel" aria-labelledby="v-pills-delivery-tab">
+        <h2 class="mb-3">Contactless </h2>
+        <img src="https://plus.unsplash.com/premium_photo-1661593078080-e56d534356ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFjdGxlc3MlMjBkZWxpdmVyeXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" alt="Delivery Image">
+      </div>
+      
+      <!-- Discount Tab -->
+      <div class="tab-pane fade text-center" id="v-pills-discount" role="tabpanel" aria-labelledby="v-pills-discount-tab">
+        <h2 class="mb-3">Gift & Voucher</h2>
+        <img src="https://plus.unsplash.com/premium_photo-1670509045675-af9f249b1bbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlzY291bnR8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Discount Image">
+      </div>
+      
+      <!-- Catering Tab -->
+      <div class="tab-pane fade text-center" id="v-pills-catering" role="tabpanel" aria-labelledby="v-pills-catering-tab">
+        <h2 class="mb-3">Awasome</h2>
+        <img src="https://images.unsplash.com/photo-1525265332434-d52e2314161d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0ZXJpbmclMjBzZXJ2aWNlcyUyMGF3YXNvbWV8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Catering Image">
+      </div>
+
+      <!-- Menu Tab -->
+      <div class="tab-pane fade text-center" id="v-pills-menu" role="tabpanel" aria-labelledby="v-pills-menu-tab">
+        <h2 class="mb-3">Updated</h2>
+        <img src="https://images.unsplash.com/photo-1629341948402-42a2d20577a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHVwYWRhdGVkJTIwbWVudXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" alt="Menu Image">
+      </div>
+
+      <!-- Support Tab -->
+      <div class="tab-pane fade text-center" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab">
+        <h2 class="mb-3">24/7</h2>
+        <img src="https://plus.unsplash.com/premium_photo-1675881515777-3978dd2df96e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fDI0JTJGNyUyMCUyMHJlc3RhdXJhbnQlMjBzZXJ2aWNlfGVufDB8fDB8fHww" class="img-fluid" alt="Support Image">
+      </div>
+
+      <!-- Private Rooms Tab -->
+      <div class="tab-pane fade text-center" id="v-pills-rooms" role="tabpanel" aria-labelledby="v-pills-rooms-tab">
+        <h2 class="mb-3">Available</h2>
+        <img src="https://plus.unsplash.com/premium_photo-1678762058107-dda70fa64d70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJpdmF0ZSUyMGRpbmluZyUyMHJvb21zJTIwaW4lMjByZXN0YXVyYW50fGVufDB8fDB8fHww" class="img-fluid" alt="Private Rooms Image">
+      </div>
+
+      <!-- Wine Pairing Tab -->
+      <div class="tab-pane fade text-center" id="v-pills-wine" role="tabpanel" aria-labelledby="v-pills-wine-tab">
+        <h2 class="mb-3">Recommended</h2>
+        <img src="https://plus.unsplash.com/premium_photo-1663013157675-0c559a3d32e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2luZSUyMHBhaXJpbmclMjBpbiUyMHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Wine Pairing Image">
+      </div>
+    </div>
+  </div>
+</div>
+         <div id="container">
   <div id="stage">
     <div id="shape" class="cube backfaces">
       <div class="plane one data">Dine-In Service: Traditional service where customers sit at tables and are served by waitstaff.</div>
@@ -351,92 +549,6 @@ function toggleClassName(inElement, inClassName) {
   else addClassName(inElement, inClassName);
 }
 </script>
-        </div>
-        <!-- Navbar & Hero End -->
-
-
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Services</h5>
-                    <h1 class="mb-5">Explore Our Services</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-laptop text-primary mb-4"></i>
-                                <h5>Online Ordering System</h5>
-                                <p>Customers can easily place their food orders online through our user-friendly website and mobile app.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-truck text-primary mb-4"></i>
-                                <h5>Contactless Delivery</h5>
-                                <p>Safe and convenient contactless delivery service right to your doorstep.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-calendar-alt text-primary mb-4"></i>
-                                <h5>Subscription Meal Plans</h5>
-                                <p>Subscribe to our meal plans for a hassle-free dining experience with healthy and delicious options.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Catering Services</h5>
-                                <p>Tailored catering solutions for all your special events and corporate functions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-leaf text-primary mb-4"></i>
-                                <h5>Seasonal Menu Updates</h5>
-                                <p>Enjoy fresh and innovative dishes with our regularly updated seasonal menus.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                                <h5>24/7 Customer Support</h5>
-                                <p>Our dedicated customer support team is available around the clock to assist you with any queries or issues.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-door-closed text-primary mb-4"></i>
-                                <h5>Private Dining Rooms</h5>
-                                <p>Experience exclusive dining in our elegant private rooms, perfect for special occasions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-wine-glass-alt text-primary mb-4"></i>
-                                <h5>Wine Pairing Recommendations</h5>
-                                <p>Enhance your meal with expert wine pairing suggestions from our sommelier</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- Service End -->
         
