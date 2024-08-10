@@ -578,71 +578,75 @@
   </script>
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* General body margin */
-    body {
-      margin-top: 20px; /* Adjust this value as needed */
+<style>
+  body {
+    margin-top: 20px;
+  }
+
+  .jumbotron {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  .panel-primary {
+    margin-top: 30px;
+  }
+
+  .container-content {
+    overflow: hidden;
+  }
+
+  /* Adjusting tab alignment */
+  .nav-pills > li {
+    float: left;
+    width: 33.3333%;
+  }
+
+  .nav-pills > li > a {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Ensure horizontal scrolling on smaller screens */
+  @media (max-width: 767px) {
+    .nav-pills {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
     }
-
-    .jumbotron {
-      background-color: #f5f5f5;
-      padding: 30px;
-      border-radius: 5px;
-      margin-bottom: 30px;
+    .nav-pills > li {
+      flex: 1 0 auto;
     }
+  }
 
-    .panel-primary {
-      margin-top: 30px;
-    }
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0;
+  }
 
-    /* Adjust the floating elements */
-    .container-content {
-      overflow: hidden;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 767px) {
-      #exTab3 {
-        max-width: 100%;
-      }
-
-      .panel-primary {
-        max-width: 100%;
-        float: none;
-        margin-top: 20px;
-      }
-    }
-
-    /* Tab styles */
-    #exTab3 .nav-pills > li > a {
-      border-radius: 4px 4px 0 0;
-    }
-
-    #exTab3 .tab-content {
-      color: white;
-      background-color: #28b04b;
-      padding: 15px;
-    }
-  </style>
-
+  #exTab3 .tab-content {
+    color: white;
+    background-color: #28b04b;
+    padding: 15px;
+  }
+</style>
 
 <header>
   <!-- Your header content here -->
 </header>
 
-<div class="container">
-  <!-- Jumbotron Section -->
+<div class="container-fluid">
   <div class="jumbotron" style="background-image: url('restaurant-banner.jpg'); background-size: cover; padding: 50px; color: green;">
     <h1>Partner with Us & Savor the Benefits!</h1>
-
   </div>
 
-  <!-- Content Section -->
-  <div class="container-content">
-    <h2 align="justify">Become Our Partner in 3 Easy Steps</h2>
-    
-    <div id="affiliateSteps" class="container" style="max-width: 60%; float: left;">
-      <ul class="nav nav-pills">
+  <div class="container-content row">
+    <div id="affiliateSteps" class="col-md-7">
+      <h2 align="justify">Become Our Partner in 3 Easy Steps</h2>
+      <ul class="nav nav-pills nav-justified text-center">
         <li class="active"><a href="#step1" data-toggle="tab">Sign-up</a></li>
         <li><a href="#step2" data-toggle="tab">Promote Us</a></li>
         <li><a href="#step3" data-toggle="tab">Earn Rewards</a></li>
@@ -657,18 +661,15 @@
         <div class="tab-pane" id="step2">
           <h3>Start Promoting Our Delicious Menu</h3>
           <p>Use your unique referral link to promote our restaurant.</p>
-          <!----<p><a class="btn btn-primary" href="/join-affiliate-program" role="button">Join Now</a></p>---->
         </div>
         <div class="tab-pane" id="step3">
           <h3>Earn Rewards for Every Referral</h3>
           <p>Receive generous commissions for each new customer you bring.</p>
-           <!----<p><a class="btn btn-primary" href="/join-affiliate-program" role="button">Join Now</a></p>---->
         </div>
       </div>
     </div>
 
-    <!-- Benefits Panel -->
-    <div class="panel panel-primary" style="max-width: 35%; float: right;">
+    <div class="panel panel-primary col-md-5">
       <div class="panel-heading" style="background-color: #d9534f;">Why Partner with Us</div>
       <div class="panel-body">
         <ul>
@@ -678,12 +679,14 @@
           <li>Dedicated affiliate support</li>
           <li>Trusted restaurant brand</li>
         </ul>
-        <!---<a href="/affiliate-guidelines" class="btn btn-default">Learn More</a>---->
         <a href="/affiliate-video" class="btn btn-default pull-right">Watch Video</a>
       </div>
     </div>
   </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
  <style>
@@ -2523,7 +2526,13 @@ position: absolute;
 <!-- Add Bootstrap JS and jQuery if not already included -->
 
         <!-- Reservation Start -->
-        
+ <style>
+        @media (max-width: 576px) {
+    .footer {
+        padding: 10px;
+    }
+}
+</style>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
