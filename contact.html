@@ -224,7 +224,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form id="contactForm">
+                   <form id="contactForm">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -238,12 +238,47 @@
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+ <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" name="Subject:"id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <input type="phone" class="form-control" name="Phone:"id="tel" placeholder="Your Phone">
+                                            <label for="phone">Your Phone</label>
                                         </div>
                                     </div>
+<div class="col-md-6">
+    <select id="inputGender" name="Gender" class="form-select" aria-label="Gender" required>
+        <option selected disabled>Choose Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Non-Binary">Non-Binary</option>
+        <option value="Prefer Not to Say">Prefer Not to Say</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+<div class="col-md-6">
+    <select id="inputContactMethod" name="PreferredContactMethod" class="form-select" aria-label="Preferred Contact Method" required>
+        <option selected disabled>Choose Preferred Contact </option>
+        <option value="Email">Email</option>
+        <option value="Phone">Phone</option>
+        <option value="Text Message">Text Message</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="No Preference">No Preference</option>
+    </select>
+</div>
+<div class="col-md-6">
+    <select id="inputInquirySubject" name="SubjectOfInquiry" class="form-select" aria-label="Subject of Inquiry" required>
+        <option selected disabled>Choose Subject of Inquiry</option>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Booking">Booking</option>
+        <option value="Menu Information">Menu Information</option>
+        <option value="Catering Services">Catering Services</option>
+        <option value="Feedback/Complaint">Feedback/Complaint</option>
+        <option value="Events and Parties">Events and Parties</option>
+        <option value="Job Application">Job Application</option>
+        <option value="Other">Other</option>
+    </select>
+</div>
+
+                                   
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" name="Leave a message here:"placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
