@@ -44,35 +44,50 @@
 
 
         <!-- Navbar & Hero Start -->
-             <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Enchanté Eats</h1>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+              <style>
+        .navbar-brand h1 {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+        }
+    </style>
 
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                  <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link ">Service</a>
-                        <a href="menu.html" class="nav-item nav-link ">Menu</a>
-                        <!--<a href="testimonial.html" class="nav-item nav-link">Review</a>--> 
-                        <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
-                        <a href="event.html" class="nav-item nav-link">Events</a>
-                       <!--  <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
-                            <div class="dropdown-menu m-0">
-                               
-                                <a href="party.html" class="dropdown-item">Party</a>
-                               <a href="birthday.html" class="dropdown-item">Birthday</a>
-                               <a href="meeting.html" class="dropdown-item">Meeting</a>
-                            </div>
-                        </div>--> 
-            </nav>
+    <div class="container-xxl position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="#" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Enchanté Eats</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="menu.html" class="nav-item nav-link">Menu</a>
+                    <!--<a href="testimonial.html" class="nav-item nav-link">Review</a>-->
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                    <a href="event.html" class="nav-item nav-link">Events</a>
+                    <!-- Uncomment the dropdown if needed
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="party.html" class="dropdown-item">Party</a>
+                            <a href="birthday.html" class="dropdown-item">Birthday</a>
+                            <a href="meeting.html" class="dropdown-item">Meeting</a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    </div>
 <style>
 body {
   background: #161616;
