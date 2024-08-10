@@ -153,39 +153,48 @@ body{
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
                         
-                         <form id="contactForm">
-                         <div class="elem-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-  </div>
-  <div class="elem-group">
-    <label for="email">Your E-mail</label>
-    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-  </div>
-  <div class="elem-group">
-    <label for="phone">Your Phone</label>
-    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-  </div>
-  <hr>
-  <div class="elem-group inlined">
-    <label for="adult">Adults</label>
-    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="child">Children</label>
-    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="checkin-date">Check-in Date</label>
-    <input type="date" id="checkin-date" name="checkin" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="checkout-date">Check-out Date</label>
-    <input type="date" id="checkout-date" name="checkout" required>
-  </div>
-   <div class="elem-group">
-    <label for="room-selection">Select Room Preference</label>
-    <select id="room-selection" name="	Table_preference" required>
+                 <form id="contactForm">
+    <h2>Book Your Table</h2>
+    <div class="elem-group">
+      <label for="name"><i class="fas fa-user"></i> Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Za-z\s]{3,20}" required>
+    </div>
+
+    <div class="elem-group">
+      <label for="email"><i class="fas fa-envelope"></i> Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+
+    <div class="elem-group">
+      <label for="phone"><i class="fas fa-phone"></i> Your Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern="\d{3}[-\s]?\d{3}[-\s]?\d{4}" required>
+    </div>
+
+    <hr>
+
+    <div class="elem-group inlined">
+      <label for="adult"><i class="fas fa-user-friends"></i> Adults</label>
+      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+    </div>
+
+    <div class="elem-group inlined">
+      <label for="child"><i class="fas fa-child"></i> Children</label>
+      <input type="number" id="child" name="total_children" placeholder="0" min="0" required>
+    </div>
+
+    <div class="elem-group inlined">
+      <label for="checkin-date"><i class="fas fa-calendar-alt"></i> Check-in Date</label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+
+    <div class="elem-group">
+      <label for="inputTime"><i class="fas fa-clock"></i> Preferred Time</label>
+      <input type="time" id="inputTime" name="PreferredTime" required>
+    </div>
+
+    <div class="elem-group">
+      <label for="room-selection"><i class="fas fa-chair"></i> Select Table Preference</label>
+      <select id="room-selection" name="table_preference" required>
         <option value="">Choose a Table from the List</option>
         <option value="Standard Dining Table">Standard Dining Table</option>
         <option value="Booth Seating">Booth Seating</option>
@@ -193,15 +202,18 @@ body{
         <option value="Bar Tables">Bar Tables</option>
         <option value="Counter Seating">Counter Seating</option>
         <option value="Communal Tables">Communal Tables</option>
-    </select>
-  </div>
-  <hr>
-  <div class="elem-group">
-    <label for="message">Anything Else?</label>
-    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-  </div>
-  <button type="submit">Book The Table</button>
-                    </form>
+      </select>
+    </div>
+
+    <hr>
+
+    <div class="elem-group">
+      <label for="message"><i class="fas fa-comment-dots"></i> Anything Else?</label>
+      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+    </div>
+
+    <button type="submit"><i class="fas fa-check"></i> Book The Table</button>
+  </form>
                 </div>
             </div>
         </div>
