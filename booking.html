@@ -144,10 +144,28 @@ body{
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/3U14QYMV-7M" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                    </div>
+    <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/3U14QYMV-7M" data-bs-target="#videoModal">
+        <span>&#9658;</span> <!-- Play icon -->
+    </button>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Video Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <iframe id="video" src="" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                 </div>
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
@@ -222,7 +240,7 @@ body{
       <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
     </div>
 
-    <button type="submit"><i class="fas fa-check"></i> Book The Table</button>
+    <button type="submit"><i class="fas fa-check"></i> Book Now</button>
   </form>
                 </div>
             </div>
