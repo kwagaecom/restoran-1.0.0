@@ -357,52 +357,97 @@ socialShareButtons.forEach(function (button) {
 <video autoplay muted loop id="bg-video">
           <source src="img/Studyfps.mp4" type="video/mp4" />
       </video>
-    <div class="container my-5 py-5 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
-        <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
-        <div style="
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between the buttons */
-    margin: 20px 0;">
-    
-    <!-- Order Online Button -->
-    <a href="Order.html" style="
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        background-color: #17a2b8; /* Bootstrap info blue */
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;">
-        Order Online
-    </a>
+  <div class="container my-5 py-5 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center">
+    <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+    <div style="
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Space between the buttons */
+        margin: 20px 0;
+        flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+    ">
+        <!-- Order Online Button -->
+        <a href="Order.html" style="
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #17a2b8; /* Bootstrap info blue */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        ">
+            Order Online
+        </a>
 
-    <!-- Book Now Button -->
-    <a href="booking.html" class="btn btn-primary py-2 px-4" style="
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        text-decoration: none;">
-        Book Now
-    </a>
-            <a href="https://drive.google.com/uc?export=download&id=1WCvX57i5Q1TERZXFpfRQ9vQF_MlVlFF-" class="btn btn-success" download>Download Menu</a>
-            <a href="https://www.swiggy.com"  target="_blank"><button type="button" class="btn btn-swiggy">SWIGGY</button>
-              <i class="fab fa-swiggy"></i>
-            </a>
-                <a href="https://www.zomato.com"  target="_blank"><button type="button" class="btn btn-zomato">ZOMATO</button>
-              <i class="fab fa-zomato"></i>
-            </a>
-</div>
+        <!-- Book Now Button -->
+        <a href="booking.html" class="btn btn-primary py-2 px-4" style="
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        ">
+            Book Now
+        </a>
 
+        <!-- Download Menu Button -->
+        <a href="https://drive.google.com/uc?export=download&id=1WCvX57i5Q1TERZXFpfRQ9vQF_MlVlFF-" class="btn btn-success" download style="
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        ">
+            Download Menu
+        </a>
+
+        <!-- Swiggy Button -->
+        <a href="https://www.swiggy.com" target="_blank" style="
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #fc8019; /* Swiggy color */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        ">
+            <i class="fab fa-swiggy"></i> Swiggy
+        </a>
+
+        <!-- Zomato Button -->
+        <a href="https://www.zomato.com" target="_blank" style="
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #f40076; /* Zomato color */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        ">
+            <i class="fab fa-zomato"></i> Zomato
+        </a>
     </div>
 </div>
+
 
         <!-- Navbar & Hero End -->
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
