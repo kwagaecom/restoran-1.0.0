@@ -266,55 +266,86 @@ socialShareButtons.forEach(function (button) {
   </style>
 
   <!-- Modal -->
-  <style>
-    .modal-dialog {
-      max-width: 90%; /* Adjust modal width for mobile */
-    }
-    .modal-content {
-      text-align: center;
-    }
-    .modal-body img {
-      max-width: 100%;
-      height: auto;
-    }
-    @media (max-width: 576px) {
-      .modal-dialog {
-        max-width: 95%; /* Further adjustment for very small screens */
-      }
-    }
-  </style>
 
-  <!-- Modal -->
-  <div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+<style>
+
+@media (max-width: 576px) {
+    .modal-body a {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .modal-body img {
+        margin-bottom: 15px;
+    }
+}
+</style>
+<div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-body">
-         <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHJlc3RhdXJhbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" alt="Image">
-          <a href="Order.html" style="
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            background-color: #17a2b8; /* Bootstrap info blue */
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;">
-            Order Online
-        </a>
-          <a href="https://drive.google.com/uc?export=download&id=1WCvX57i5Q1TERZXFpfRQ9vQF_MlVlFF-" class="btn btn-success" download>Download Menu</a>
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHJlc3RhdXJhbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" 
+                     alt="Image" style="max-width: 100%; height: auto;">
+
+                <a href="https://drive.google.com/uc?export=download&id=1WCvX57i5Q1TERZXFpfRQ9vQF_MlVlFF-" 
+                   class="btn btn-success my-2" download style="
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                ">
+                    Download Menu
+                </a>
+
+                <!-- Swiggy Button -->
+                <a href="https://www.swiggy.com" target="_blank" style="
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                    background-color: #fc8019;
+                    border: none;
+                    border-radius: 5px;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    margin: 5px 0;
+                ">
+                    <i class="fab fa-swiggy"></i> Swiggy
+                </a>
+
+                <!-- Zomato Button -->
+                <a href="https://www.zomato.com" target="_blank" style="
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                    background-color: #f40076;
+                    border: none;
+                    border-radius: 5px;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    margin: 5px 0;
+                ">
+                    <i class="fab fa-zomato"></i> Zomato
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
+
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
