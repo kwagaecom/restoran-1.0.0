@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+     <title>Enchanté Eats - Your Restaurant </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+     <link href="img/favicon-32x32.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+         <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Enchanté Eats</h1>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                      
+                           <a href="pay.html" class="nav-item nav-link active">Pay</a>
+                       <!--  <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
+                            <div class="dropdown-menu m-0">
+                               
+                                <a href="party.html" class="dropdown-item">Party</a>
+                               <a href="birthday.html" class="dropdown-item">Birthday</a>
+                               <a href="meeting.html" class="dropdown-item">Meeting</a>
+                            </div>
+                        </div>--> 
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                   
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Pay</h1>
+                    <!--<nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+                        </ol>
+                    </nav> -->
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Team Start -->
+        
+    
+
+
+    <style>
+        .payment-page {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            background-image:url(https://images.unsplash.com/photo-1522937335625-b87ea99dc133?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29vZ2xlJTIwcGF5fGVufDB8fDB8fHww);
+            padding: 20px;
+        }
+        .payment-page .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .payment-page h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .payment-page .form-group {
+            margin-bottom: 15px;
+        }
+        .payment-page .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .payment-page .form-group select,
+        .payment-page .form-group button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            appearance: none;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+        }
+        .payment-page .form-group button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .payment-page .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .payment-page .total {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .payment-page .payment-images {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .payment-page .payment-images img {
+            width: 200px;
+            margin: 10px;
+        }
+        .payment-page select option {
+            padding: 10px;
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: left 10px center;
+            text-indent: 30px; /* Push text to the right of the image */
+        }
+    </style>
+    <script>
+        function updateTotal() {
+            let total = 0;
+            const selectedItems = document.querySelectorAll('.payment-page select option[data-count]');
+            selectedItems.forEach(option => {
+                const price = parseFloat(option.getAttribute('data-price')) || 0;
+                const count = parseInt(option.getAttribute('data-count')) || 0;
+                if (count > 0) {  // Exclude items with count of 0
+                    total += price * count;
+                }
+            });
+            document.getElementById('total').textContent = `Total: ₹${total.toFixed(2)}`;
+        }
+
+        function updateItemCount(selectElement) {
+            const selectedOption = selectElement.options[selectElement.selectedIndex];
+            let itemCount = parseInt(prompt("Enter the quantity for " + selectedOption.text, selectedOption.getAttribute('data-count') || 0));
+
+            if (!isNaN(itemCount) && itemCount >= 0) {
+                selectedOption.setAttribute('data-count', itemCount);
+            } else {
+                selectedOption.setAttribute('data-count', 0);
+            }
+
+            updateTotal();
+        }
+
+        function proceedToPayment() {
+            const paymentMethod = document.getElementById('paymentMethod').value;
+            const paymentImages = document.querySelectorAll('.payment-images img');
+            
+            paymentImages.forEach(img => {
+                img.style.display = 'none';
+            });
+
+            if (paymentMethod === 'paytm') {
+                document.getElementById('paytmImg').style.display = 'block';
+            } else if (paymentMethod === 'googlepay') {
+                document.getElementById('googlepayImg').style.display = 'block';
+            }else if (paymentMethod === 'phonepay') {
+                document.getElementById('phonepayImg').style.display = 'block';
+            }
+
+
+
+
+
+            document.querySelector('.payment-images').style.display = 'block';
+        }
+
+        window.onload = function() {
+            document.getElementById('total').textContent = 'Total: ₹0.00'; // Set initial total to 0
+        };
+    </script>
+
+
+<div class="payment-page">
+    <div class="container">
+       <form action="#" method="post" onsubmit="proceedToPayment(); return false;">
+            <div class="form-group">
+                <label for="itemSelect">Select Items</label>
+                <select id="itemSelect" name="items" multiple onchange="updateItemCount(this)">
+        <option value="Idli" data-price="235" style="background-image: url('https://shorturl.at/IgZkT');">Idli - ₹235</option>
+        <option value="Dosa" data-price="185" style="background-image: url('https://shorturl.at/pvcBd');">Dosa- ₹185</option>
+        <option value="Misal Pav" data-price="125" style="background-image: url('https://shorturl.at/xNES6');">Misal Pav - ₹125</option>
+        <option value="Poha" data-price="145" style="background-image: url('https://shorturl.at/RkGhc');">Poha - ₹145</option>
+        <option value="Upma" data-price="105" style="background-image: url('https://shorturl.at/UfutA');">Upma - ₹105</option>
+        <option value="Aloo Paratha" data-price="135" style="background-image: url('img/aloe paratha.JPG');">Aloo Paratha - ₹135</option>
+    <option value="Masala Chai" data-price="215" style="background-image: url('https://shorturl.at/vDtGb');">Masala Chai - ₹215</option>
+<option value="Chole Bhature" data-price="135" style="background-image: url('https://shorturl.at/qh1HG');">Chole Bhature - ₹135</option>
+<option value="Biryani" data-price="135" style="background-image: url('https://shorturl.at/7NMwl');">Biryani - ₹135</option>
+<option value="Paneer Butter Masala" data-price="135" style="background-image: url('https://shorturl.at/I2OLJ');">Paneer Butter Masala - ₹135</option>
+<option value="Dal Tadka" data-price="105" style="background-image: url('https://shorturl.at/QumoO');">Dal Tadka - ₹105</option>
+<option value="Palak Paneer" data-price="315" style="background-image: url('img/palak_paneer-.png');">Palak Paneer- ₹315</option>
+<option value="Chicken Curry" data-price="215" style="background-image: url('img/chicken_gravy-.png');">Chicken Curry - ₹215</option>
+    <option value="Rajma" data-price="235" style="background-image: url('img/razma_rice-.png');">Rajma - ₹235</option>
+    <option value="Aloo Gobi" data-price="190" style="background-image: url('https://shorturl.at/H7USv');">Aloo Gobi - ₹190</option>
+    <option value="Fish Curry" data-price="125" style="background-image: url('https://shorturl.at/CmCeE');">Fish Curry- ₹125</option>
+              
+                </select>
+            </div>
+
+            <div class="total" id="total">Total: ₹0.00</div>
+
+            <div class="form-group">
+                <label for="paymentMethod">Select Payment Method</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="paytm">Paytm</option>
+                    <option value="googlepay">Google Pay</option>
+                    <option value="phonepay">Phone Pay</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Proceed to Payment</button>
+            </div>
+        </form>
+
+        <div align="center"class="payment-images">
+            <img id="paytmImg" align="center" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZHT_G5N4Nex5uvu2o2D-Thae7Ua_vDE86BLAZlpGPYhibn7u2MESwOJ8KuhWHXa_jJcQvI8NyVIXwXdf_u0UKDS5esEgIL6cJDVe0ALTwaNkH_GXJQQCJqblxcp2S-ak7sWIPvJjQGNvx5D9DpSpqFZaEA-eTf8iRw2mZ-CDk8qO8uZUBFlm-yk3w1Lw/s320/paytm-removebg-preview.png" alt="Paytm QR Code" style="display:none;">
+            <img id="googlepayImg" src="googlepay-qr.png" alt="Google Pay QR Code" style="display:none;">
+            <img id="phonepayImg" src="phonepay-qr.png" alt="Phonepay QR Code" style="display:none;">
+        </div>
+    </div>
+</div>
+
+
+        <!-- Team End -->
+
+
+        <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                   
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>service@enchante.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+          <div class="col-lg-6 col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093657!2d144.9537353155044!3d-37.81627917975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727df09c728d7c!2s123+Street%2C+New+York%2C+USA!5e0!3m2!1sen!2s!4v1499824345916" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Enchanté Eats</a>, All Right Reserved. 
+                            
+                           
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Privacy Policy</a>
+                                <a href="">Cookies Policy</a>
+                                <a href="">SiteMap</a>
+                                <a href="">Terns of Condition</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
